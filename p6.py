@@ -19,3 +19,8 @@ norm_values = exp_values / np.sum(exp_values)
 
 print(norm_values)
 print(sum(norm_values))"""
+
+#we want to normalize data , we need to exponentiate them too.
+# why exp values? because we need probability distribution (-oo, 1)
+# why softmax and not ReLU? because we want to pass negatives, RElU transforms negatives to zero
+# why to normalize them? to get the actual distribution of probabilities
