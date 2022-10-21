@@ -8,6 +8,14 @@ class_targets = [0,1,1]
 
 print(softmax_outputs[[0,1,2], class_targets])
 
+print(-np.log(softmax_outputs[range(len(softmax_outputs)), class_targets]))
+
+neg_log = -np.log(softmax_outputs[range(len(softmax_outputs)), class_targets])
+
+average_loss = np.mean(neg_log)
+
+print(average_loss)
+
 """np.clip() ===>>> Clip (limit) the values in an array.
 
 Given an interval, values outside the interval
@@ -16,3 +24,4 @@ if an interval of [0, 1] is specified, values smaller
 than 0 become 0, and values larger than 1 become 1."""
 
 """np.argmax() ===>>> Returns the indices of the maximum values along an axis."""
+

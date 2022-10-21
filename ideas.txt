@@ -1,0 +1,12 @@
+>> what RELu does? 
+>> how it includes non linear cases?
+
+#we want to normalize data , we need to exponentiate them too.
+# why exp values? because we need probability distribution (-oo, 1)
+# why softmax and not ReLU? because we want to pass negatives, RElU transforms negatives to zero
+# why to normalize them? to get the actual distribution of probabilities
+
+ Categorical cross-entropy is explicitly used to compare
+a “ground-truth” probability (y or “targets”) and some predicted distribution (y-hat or
+“predictions”), so it makes sense to use cross-entropy here
+
